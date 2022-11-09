@@ -190,20 +190,22 @@ def loadFileInformation(filename):
     #print(dir(ds))
     #print(type(information))
     return information
-	
-filename = sys.argv[1]
-information = loadFileInformation(filename)
-WindowCenter = information['WindowCenter']
-WindowWidth = information['WindowWidth']
-print('WindowCenter={},WindowWidth={}'.format(WindowCenter,WindowWidth))
+
+
+# 下面是输入一个图像进行dicom文件生成的示例代码
+# filename = sys.argv[1]
+# information = loadFileInformation(filename)
+# WindowCenter = information['WindowCenter']
+# WindowWidth = information['WindowWidth']
+# print('WindowCenter={},WindowWidth={}'.format(WindowCenter,WindowWidth))
  
-dcm = pydicom.dcmread(filename)  # 加载Dicom数据
-img_data = get_pixeldata(dcm)[0]
-img_temp = setDicomWinWidthWinCenter(img_data,WindowWidth, WindowCenter, get_pixeldata(dcm)[1],get_pixeldata(dcm)[2])
-dcm_img = Image.fromarray(img_temp)  # 将Numpy转换为PIL.Image
-dcm_img = dcm_img.convert('L')
+# dcm = pydicom.dcmread(filename)  # 加载Dicom数据
+# img_data = get_pixeldata(dcm)[0]
+# img_temp = setDicomWinWidthWinCenter(img_data,WindowWidth, WindowCenter, get_pixeldata(dcm)[1],get_pixeldata(dcm)[2])
+# dcm_img = Image.fromarray(img_temp)  # 将Numpy转换为PIL.Image
+# dcm_img = dcm_img.convert('L')
  
-# 保存为jpg文件，用作后面的生成label用
-dcm_img.save('temp.jpg')
-# 显示图像
-dcm_img.show()
+# # 保存为jpg文件，用作后面的生成label用
+# dcm_img.save('temp.jpg')
+# # 显示图像
+# dcm_img.show()
