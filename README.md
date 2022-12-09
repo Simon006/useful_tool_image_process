@@ -1,6 +1,7 @@
 # useful_tool_image_process
 
 这个是一个图像处理过程中，做的一些有用的程序。
+
 涉及
 
 dicom文件（批量）转jpg - dicom_batch2jpg.py
@@ -19,4 +20,4 @@ dicom文件（批量）转npz - dicom2npy.py
 
 对labelme标注工具导出文件的json文件进行mask生成 - label_img_json2mask.py
 
-这个库开始的时候是用于RePaint篇的论文复现，现在其中涉及的代码已经更加丰富和强大
+这个库开始的时候是用于RePaint篇的论文复现，现在其中涉及的代码已经更加丰富和强大。
