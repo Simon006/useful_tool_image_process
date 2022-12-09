@@ -10,4 +10,4 @@ dicom文件（批量）转npz - dicom2npy.py
 图像批量添加mask -  photo_batch_addmask.py  
 文件夹中的图片合并拼成一个大图 - synthesis.py
 对labelme标注工具导出文件的json文件进行mask生成 - label_img_json2mask.py
-这个库初始的时候是用于RePaint篇的论文复现，现在其中涉及的代码已经更加丰富和强大
+这个库开始的时候是用于RePaint篇的论文复现，现在其中涉及的代码已经更加丰富和强大
