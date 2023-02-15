@@ -9,14 +9,17 @@ from dicom2jpg import *
 
 #存放DICOM文件的文件夹path
 
-image_path1 = "D:\\MatLab高清化\\超清化原图2022-10-27\\超清化原图2022-10-26\\wangxingrong"
-image_path2 = "D:\\MatLab高清化\\超清化原图2022-10-27\\超清化原图2022-10-26\\zhaofei"
-img_path_dir =[image_path1,image_path2] 
+# image_path1 = "D:\\MatLab高清化\\超清化原图2022-10-27\\超清化原图2022-10-26\\wangxingrong"
+# image_path2 = "D:\\MatLab高清化\\超清化原图2022-10-27\\超清化原图2022-10-26\\zhaofei"
+image_path1 = "D:\MatLab高清化\���廯ԭͼ2-9\��ѡͼ-�κ�\����ǰ"
+image_path2 = "D:\MatLab高清化\���廯ԭͼ2-9\��ѡͼ-������2\����ǰ"
+image_path3 = "D:\MatLab高清化\���廯ԭͼ2-9\��ѡͼ-������\����ǰ"
+img_path_dir =[image_path1,image_path2,image_path3] 
 
 
 
 #定义预读的图片文件类型
-img_type = ['.jpg','.JPG','.png','.PNG','.bmp','.BMP','.dcm']    # 可继续添加图片类型
+img_type = ['.jpg','.JPG','.png','.PNG','.bmp','.BMP','.dcm',"ima","IMA"]    # 可继续添加图片类型
 def image_compose(image_path):
     if not os.path.isdir(image_path):
         return -1
