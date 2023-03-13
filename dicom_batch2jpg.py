@@ -9,9 +9,8 @@ from dicom2jpg import *
 
 #存放DICOM文件的文件夹path
 
-# image_path1 = "D:\\MatLab高清化\\超清化原图2022-10-27\\超清化原图2022-10-26\\wangxingrong"
-# image_path2 = "D:\\MatLab高清化\\超清化原图2022-10-27\\超清化原图2022-10-26\\zhaofei"
 image_path1 = r"C:\Users\OMEN\Desktop\jpginput\DCM"
+image_path1 = r"C:\Users\OMEN\Desktop\dcm"
 # img_path_dir =[image_path1,image_path2,image_path3] 
 img_path_dir = [image_path1]
 
@@ -62,5 +61,5 @@ def dicom_batch_to_jpg(file_path_dir,path_out_dir=os.getcwd(),WindowCenter=None,
             # dcm_img.show()
 
 
-path_out_dir = "C:\\Users\\OMEN\\Desktop\\result1"
+path_out_dir = "C:\\Users\\OMEN\\Desktop\\jpg2"
 dicom_batch_to_jpg(img_path_dir,path_out_dir,-400,1400)
