@@ -4,6 +4,10 @@
 
 涉及
 
+文件批量移动 - batch_move_files.py
+
+图片文件夹内图片批量转指定分辨率 - photoresize.py
+
 dicom文件（批量）转jpg - dicom_batch2jpg.py
 
 dicom文件（批量）转npz - dicom2npy.py
